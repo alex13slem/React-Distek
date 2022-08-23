@@ -1,0 +1,23 @@
+.software {
+	&__wrap {
+	}
+	&__inner {
+		&_top-block {
+			margin-bottom: 15px;
+			padding: 25px 40px 93px;
+			background: #fff;
+			border-radius: 20px;
+		}
+		&_bottom-block {
+			display: flex;
+		}
+	}
+	&__title {
+		max-width: 842px;
+		font-family: "Montserrat";
+		font-weight: 600;
+		font-size: 45px;
+		line-height: 106%;
+		/* or 48px */
+	}
+}

@@ -1,0 +1,45 @@
+$body-bg: #f1f1f1;
+$body-color: #393838;
+
+// $grid-breakpoints: (
+// 	xs: 0,
+// 	sm: 576px,
+// 	md: 768px,
+// 	lg: 1024px,
+// 	xl: 1366px,
+// 	xxl: 1920px,
+// );
+
+// $container-max-widths: (
+// 	sm: 540px,
+// 	md: 748px,
+// 	lg: 1024px,
+// 	xl: 1280px,
+// 	xxl: 1864px,
+// );
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+	font-family: "Roboto";
+	font-weight: 400;
+	min-width: 320px;
+}
+
+// .container {
+// 	&-sm,
+// 	&-xs {
+// 		padding-left: 10px;
+// 		padding-right: 10px;
+// 	}
+// 	&-xl,
+// 	&-lg,
+// 	&-md {
+// 		padding-left: 37px;
+// 		padding-right: 37px;
+// 	}
+// 	&-xxl {
+// 		padding-left: 40px;
+// 		padding-right: 40px;
+// 	}
+// }

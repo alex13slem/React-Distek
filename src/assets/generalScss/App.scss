@@ -1,0 +1,8 @@
+@import "./font-face";
+@import "./custom/bootstrap";
+@import "./normalize";
+
+@import "../../components/generalComponents/Header/header";
+@import "../../components/pages/MainPage/mainPage";
+@import "../../components/pages/MainPage/HeroPage/hero-page";
+@import "../../components/pages/MainPage/Software/software";

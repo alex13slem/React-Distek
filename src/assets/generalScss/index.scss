@@ -1,0 +1,41 @@
+html,
+body,
+body > div,
+.app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+[class*="__wrap"] {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: 1921px) {
+    padding-left: 2vmax;
+    padding-right: 2vmax;
+  }
+}

@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"name": "Программное обеспечение",
+		"link": "javascript:void(0)"
+	},
+	{
+		"id": 2,
+		"name": "Новости",
+		"link": "javascript:void(0)"
+	},
+	{
+		"id": 3,
+		"name": "О нас",
+		"link": "javascript:void(0)"
+	}
+]
