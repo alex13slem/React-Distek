@@ -3,7 +3,7 @@ import { accordionData } from "../localData/accordionData"
 import companys from "../../../generalData/companys.json"
 import contacts from "../../../generalData/contacts.json"
 // import accordionDatajson from "../localData/accordionData.json"
-// console.log(accordionData)
+console.log(accordionData)
 // console.log(accordionDatajson)
 
 export const HeroPage = () => {

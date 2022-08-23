@@ -19,7 +19,7 @@ export const Accordion = (
 	}
 
 ) => {
-	console.log(items)
+	// console.log(items)
 	const [currentIdx, setCurrentIdx] = useState(-1)
 	const btnOnClick = (idx: number) => {
 		setCurrentIdx((currentValue) => (currentValue !== idx ? idx : -1))
