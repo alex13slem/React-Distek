@@ -1,0 +1,110 @@
+.product-link {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	p {
+		position: relative;
+		padding-right: 27px;
+
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 95%;
+		/* identical to box height, or 19px */
+
+		text-transform: uppercase;
+		white-space: nowrap;
+
+		/* Brand/Blue-Primary-Light */
+		color: #197acf;
+
+		&::after {
+			position: absolute;
+			content: "";
+			width: 14px;
+			height: 15px;
+			right: 3px;
+			bottom: calc(50% - 7px);
+			background: url("~/public/svg/icons/arrow-left.svg") center / contain no-repeat;
+		}
+	}
+	&__logo {
+		flex: 0 0 auto;
+		display: flex;
+		width: 49px;
+		height: 28px;
+		border-radius: 100px;
+		background: #f1f1f1;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.box-number {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	width: 97px;
+	height: 97px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f1f1f1;
+	border-radius: 0 0 20px 0;
+	&::after,
+	&::before {
+		position: absolute;
+		content: "";
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		box-shadow: -20px -20px #f1f1f1;
+	}
+	&::after {
+		top: 2px;
+		left: 100%;
+	}
+	&::before {
+		left: 2px;
+		top: 100%;
+	}
+}
+
+@media (max-width: 1439.98px) {
+	.box-number {
+		width: 80px;
+		height: 80px;
+	}
+}
+
+@media (max-width: 1199.98px) {
+	.box-number {
+		width: 62px;
+		height: 62px;
+		border-radius: 0 0 16px 0;
+		&::after {
+			width: 32px;
+			height: 32px;
+			box-shadow: -16px -16px #f1f1f1;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.box-number {
+		width: 46px;
+		height: 46px;
+		border-radius: 0 0 8px 0;
+		svg,
+		img {
+			width: 17px;
+			height: 15px;
+		}
+		&::after,
+		&::before {
+			width: 23px;
+			height: 23px;
+			box-shadow: -8px -8px #f1f1f1;
+		}
+	}
+}

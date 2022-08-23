@@ -25,8 +25,8 @@ export const HeroPage = () => {
 					<div className="hero-page__product-links">
 						{
 							companys.map(item => (
-								<a className="hero-page__product-link" href={item.link}>
-									<div className="hero-page__product-link-logo"><img src={item.srcImage} alt={item.shortname} /></div>
+								<a className="hero-page__product-link product-link" href={item.link}>
+									<div className="product-link__logo"><img src={item.srcImage} alt={item.shortname} /></div>
 									<p>{item.name}</p>
 								</a>
 							))
@@ -35,7 +35,7 @@ export const HeroPage = () => {
 				</div>
 				<div className="hero-page__inner hero-page__inner_bottom-block">
 					<a href="javascript:void(0)" className="hero-page__clients clients">
-						<div className="hero-page__box-number">
+						<div className="hero-page__box-number box-number">
 							<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0 2.86252V0H19.1776L22 2.86252V8.62524L19.1776 11.4501H3.36513L2.75 12.0527V17.1751H22V20H0V14.3126L5.5 8.62524H19.1776V2.86252H0Z" fill="#393838" />
 							</svg>
@@ -62,7 +62,7 @@ export const HeroPage = () => {
 						</div>
 					</a>
 					<div className="hero-page__advantages advantages">
-						<div className="hero-page__box-number">
+						<div className="hero-page__box-number box-number">
 							<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0 2.86252V0H12.3547L15.064 2.86252V17.1751H22V20H0V17.1751H12.3547V2.86252H0Z" fill="#393838" />
 							</svg>

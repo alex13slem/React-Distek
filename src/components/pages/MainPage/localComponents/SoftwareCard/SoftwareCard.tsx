@@ -1,4 +1,4 @@
-import { SoftwareCardData } from "../../../../../types"
+import { Companys, SoftwareCardData } from "../../../../../types"
 
 
 
@@ -6,38 +6,37 @@ export const SoftwareCard = (
 	{
 		data,
 	}: {
-		data: any
+		data: SoftwareCardData
 	}
 ) => {
-	// console.log(data)
-	// {
-	// 	if (data.links instanceof Array) {
-	// 		const links = data.links.map(el => el)
-	// 		console.log(links)
-	// 	}
-	// 	else {
-	// 		// console.log('not array')
-	// 	}
-	// }
+
 	return (
 
 		<div className="software-card">
-			<div className="sotware-card__number"><img src={data.number} alt="" /></div>
-			<div className="software-card__title">{data.title}</div>
-			<div className="software-card__image-block">
-				<img src={data.image} alt="" />
+			<div className="sotware-card__number box-number"><img src={data.number} alt="" /></div>
+			<p className="software-card__title">{data.title}</p>
+			<img className="software-card__image" src={data.image} alt="" />
+			<div className="software-card__product-links">
 				{
-					<a className="hero-page__product-link" href={data.links.link}>
-						<div className="hero-page__product-link-logo">
-							<img src={data.links.srcImage}
-								alt={data.links.shortname}
-							/>
-						</div>
-						<p>{data.links.name}</p>
-					</a>
+					data.links.map((links: Companys) => (
+						<a className="software-card__product-link product-link" href={links.link}>
+							<div className="product-link__logo">
+								<img src={links.srcImage}
+									alt={links.shortname}
+								/>
+							</div>
+							<p>{links.name}</p>
+						</a>
+					))
 				}
-
 			</div>
+			<ul className="software-card__list">
+				{
+					data.list.map((el: string) => (
+						<li>{el}</li>
+					))
+				}
+			</ul>
 		</div>
 
 	)

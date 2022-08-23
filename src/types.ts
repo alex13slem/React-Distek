@@ -9,7 +9,7 @@ export type AccordionData = {
 export type Companys = {
 	id: number,
 	name: string,
-	shortname: string,
+	shortname: string | undefined,
 	link: string,
 	srcImage: string
 }
@@ -19,6 +19,6 @@ export type SoftwareCardData = {
 	title: string,
 	number: string,
 	image: string,
-	links: Companys,
-	list: Array<string>
+	links: any,
+	list: string[]
 }

@@ -8,8 +8,8 @@ import cardImg3 from "../../../../assets/images/software/card-3.gif"
 
 import companyLinks from "../../../generalData/companys.json"
 
-const sketchup = companyLinks.find(el => el.id === 1)
-const trimble = companyLinks.find(el => el.id === 4)
+const sketchup = [companyLinks.find(el => el.id === 1)]
+const trimble = [companyLinks.find(el => el.id === 4)]
 const tekla = [companyLinks.find(el => el.id === 2), companyLinks.find(el => el.id === 3)]
 // console.log(tekla)
 
