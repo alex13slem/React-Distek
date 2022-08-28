@@ -8,14 +8,44 @@
 			border-radius: 20px;
 		}
 		&_bottom-block {
+			position: relative;
 			overflow: hidden;
+
 			.slide-block {
 				display: flex;
 				gap: 17px;
 				transition: transform 0.5s ease-in-out;
+
+				&::after,
+				&::before {
+					z-index: 5;
+					position: absolute;
+					content: "";
+					top: 0;
+					height: 100%;
+					width: 4%;
+					transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+				}
+				&::before {
+					opacity: 0;
+					left: 0;
+					background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #f1f1f1);
+				}
+				&::after {
+					right: 0;
+					background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #f1f1f1);
+				}
 			}
 			.slide-active {
 				transform: translateX(-11%);
+				&::before {
+					opacity: 1;
+					transform: translateX(275%);
+				}
+				&::after {
+					opacity: 0;
+					transform: translateX(300%);
+				}
 			}
 		}
 	}
