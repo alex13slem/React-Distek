@@ -1,7 +1,10 @@
 import contacts from "../../generalData/contacts.json"
 import mainMenu from "../../generalData/mainMenu.json"
+import { Link, animateScroll as scroll } from "react-scroll";
 
-
+const scrollToTop = () => {
+	scroll.scrollToTop();
+};
 
 export const Header = () => {
 	return (
@@ -9,16 +12,34 @@ export const Header = () => {
 			<div className="header__wrap">
 				<div className="header__inner">
 					<nav className="header__navbar">
-						<a className="header__site-logo" href="javascript:void(0)"><img src='/svg/site-logo.svg' alt="site-logo" /></a>
+						<a
+							className="header__site-logo"
+							onClick={scrollToTop}
+						>
+							<img src='/svg/site-logo.svg' alt="site-logo" />
+						</a>
 						<ul>
 							{
 								mainMenu.map(item => (
-									<li><a href={`${item.link}`}>{item.name}</a></li>
+									<li
+										key={item.id}
+									>
+										<Link
+
+											activeClass="active"
+											to={`${item.link}`}
+											spy={true}
+											smooth={true}
+											offset={-100}
+											duration={100}
+
+										>{item.name}</Link>
+									</li>
 								))
 							}
 						</ul>
 					</nav>
-					<a className="header__tel" href={`tel:${contacts.tel}`}>{contacts.tel}</a>
+					<div className="header__tel firm-btn"><a href={`tel:${contacts.tel}`}>{contacts.tel}</a></div>
 				</div>
 			</div>
 		</header>

@@ -2,7 +2,18 @@
 @import "./custom/bootstrap";
 @import "./normalize";
 @import "./site-style";
+
+@import "../../components/generalComponents/Accordion/accordion";
+@import "../../components/generalComponents/FormEmail/form-block";
+
 @import "../../components/generalComponents/Header/header";
+@import "../../components/generalComponents/Footer/footer";
+
 @import "../../components/pages/MainPage/mainPage";
+@import "../../components/pages/MainPage/localComponents/SoftwareCard/sofrware-card";
+@import "../../components/pages/MainPage/localComponents/NewsArticle/news-article";
+
 @import "../../components/pages/MainPage/HeroPage/hero-page";
 @import "../../components/pages/MainPage/Software/software";
+@import "../../components/pages/MainPage/Dealers/dealers";
+@import "../../components/pages/MainPage/News/news";

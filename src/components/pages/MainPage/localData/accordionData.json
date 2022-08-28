@@ -2,85 +2,31 @@
 	{
 		"id": 1,
 		"title": "Маркетинг",
-		"content": {
-			"type": "p",
-			"key": null,
-			"ref": null,
-			"props": {
-				"children": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Maiores similique, beatae nobis nulla blanditiis earum inventore non porro facere obcaecati quia, itaque adipisci sunt minus accusamus eius ipsam a voluptatibus!"
-			},
-			"_owner": null,
-			"_store": {}
-		}
+		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Maiores similique, beatae nobis nulla blanditiis earum inventore non porro facere obcaecati quia, itaque adipisci sunt minus accusamus eius ipsam a voluptatibus!"
 	},
 	{
 		"id": 2,
 		"title": "Поддержка при работе с заказчиками",
-		"content": {
-			"type": "p",
-			"key": null,
-			"ref": null,
-			"props": {
-				"children": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Maiores similique, beatae nobis nulla blanditiis earum inventore non porro facere obcaecati quia, itaque adipisci sunt minus accusamus eius ipsam a voluptatibus!"
-			},
-			"_owner": null,
-			"_store": {}
-		}
+		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Maiores similique, beatae nobis nulla blanditiis earum inventore non porro facere obcaecati quia, itaque adipisci sunt minus accusamus eius ipsam a voluptatibus!"
 	},
 	{
 		"id": 3,
 		"title": "Более 30 партнеров",
-		"content": {
-			"type": "p",
-			"key": null,
-			"ref": null,
-			"props": {
-				"children": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Maiores similique, beatae nobis nulla blanditiis earum inventore non porro facere obcaecati quia, itaque adipisci sunt minus accusamus eius ipsam a voluptatibus!"
-			},
-			"_owner": null,
-			"_store": {}
-		}
+		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Maiores similique, beatae nobis nulla blanditiis earum inventore non porro facere obcaecati quia, itaque adipisci sunt minus accusamus eius ipsam a voluptatibus!"
 	},
 	{
 		"id": 4,
 		"title": "Информационная поддержка",
-		"content": {
-			"type": "p",
-			"key": null,
-			"ref": null,
-			"props": {
-				"children": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Maiores similique, beatae nobis nulla blanditiis earum inventore non porro facere obcaecati quia, itaque adipisci sunt minus accusamus eius ipsam a voluptatibus!"
-			},
-			"_owner": null,
-			"_store": {}
-		}
+		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Maiores similique, beatae nobis nulla blanditiis earum inventore non porro facere obcaecati quia, itaque adipisci sunt minus accusamus eius ipsam a voluptatibus!"
 	},
 	{
 		"id": 5,
 		"title": "Логистика",
-		"content": {
-			"type": "p",
-			"key": null,
-			"ref": null,
-			"props": {
-				"children": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Maiores similique, beatae nobis nulla blanditiis earum inventore non porro facere obcaecati quia, itaque adipisci sunt minus accusamus eius ipsam a voluptatibus!"
-			},
-			"_owner": null,
-			"_store": {}
-		}
+		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Maiores similique, beatae nobis nulla blanditiis earum inventore non porro facere obcaecati quia, itaque adipisci sunt minus accusamus eius ipsam a voluptatibus!"
 	},
 	{
 		"id": 6,
 		"title": "Обучение",
-		"content": {
-			"type": "p",
-			"key": null,
-			"ref": null,
-			"props": {
-				"children": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Maiores similique, beatae nobis nulla blanditiis earum inventore non porro facere obcaecati quia, itaque adipisci sunt minus accusamus eius ipsam a voluptatibus!"
-			},
-			"_owner": null,
-			"_store": {}
-		}
+		"content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Maiores similique, beatae nobis nulla blanditiis earum inventore non porro facere obcaecati quia, itaque adipisci sunt minus accusamus eius ipsam a voluptatibus!"
 	}
 ]

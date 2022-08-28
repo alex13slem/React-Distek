@@ -2,16 +2,16 @@
 	{
 		"id": 1,
 		"name": "Программное обеспечение",
-		"link": "javascript:void(0)"
+		"link": "software"
 	},
 	{
 		"id": 2,
 		"name": "Новости",
-		"link": "javascript:void(0)"
+		"link": "news"
 	},
 	{
 		"id": 3,
 		"name": "О нас",
-		"link": "javascript:void(0)"
+		"link": "hero-page"
 	}
 ]

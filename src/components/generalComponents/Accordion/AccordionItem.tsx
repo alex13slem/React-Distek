@@ -31,8 +31,19 @@ export const AccordionItem = ({
 
 	return (
 		<div className={`accordion__item ${isOpen ? 'active' : ''} ${classItem}`} >
-			<h5 className={`accordion__trigger ${classTrigger}`} onClick={btnOnClick}><span>0{data.id}</span>{data.title}</h5>
-			<div className={`accordion__content ${classContent}`} style={{ height }} ref={contentRef}>{data.content}</div>
+			<h5
+				className={`accordion__trigger ${classTrigger}`}
+				onClick={btnOnClick}
+			>
+				<span>0{data.id}</span>{data.title}
+			</h5>
+			<div
+				className={`accordion__content ${classContent}`}
+				style={{ height }}
+				ref={contentRef}
+			>
+				{data.content}
+			</div>
 		</div>
 	)
 }

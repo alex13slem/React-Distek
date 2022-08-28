@@ -16,7 +16,7 @@ const tekla = [companyLinks.find(el => el.id === 2), companyLinks.find(el => el.
 export const softwareCardsData = [
 	{
 		id: 1,
-		title: "Эскизное 3d-моделирование",
+		title: <span>Эскизное <br /> 3d-моделирование</span>,
 		number: cardNum1,
 		image: cardImg1,
 		links: sketchup,

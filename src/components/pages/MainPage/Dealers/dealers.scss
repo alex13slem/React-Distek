@@ -1,0 +1,215 @@
+.dealers {
+	margin-bottom: 50px;
+	&__wrap {
+	}
+	&__inner {
+		z-index: 0;
+		position: relative;
+		overflow: hidden;
+		padding: 43px 40px 40px;
+		background: $white;
+
+		border-radius: 20px;
+		&::after {
+			z-index: -1;
+			position: absolute;
+			content: "";
+			bottom: calc(50% - 560px);
+			left: calc(50% - 215px);
+			width: 2892px;
+			height: 2582px;
+			background: url("~/public/images/dealers/map-RF.png") 0 0 / cover no-repeat;
+		}
+	}
+	&__title {
+		margin-bottom: 60px;
+		font-family: "Montserrat";
+		font-weight: 600;
+		font-size: 45px;
+		line-height: 106%;
+		/* or 48px */
+	}
+
+	&__list {
+		height: 190px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		gap: 6px;
+
+		li {
+			width: 300px;
+			position: relative;
+			padding-left: 36px;
+			padding-right: 20px;
+			font-size: 18px;
+			line-height: 120%;
+			/* identical to box height, or 22px */
+
+			&::before {
+				position: absolute;
+				left: 0;
+				width: 16px;
+				height: 16px;
+				content: "";
+				background: url("~/public/icons/dealers-li.png") 0 0 / contain no-repeat;
+			}
+		}
+	}
+
+	&__contacts {
+		margin-top: 222px;
+	}
+
+	.contacts-item {
+		margin-bottom: 20px;
+		position: relative;
+		max-width: 560px;
+
+		padding-left: 27px;
+		padding-top: 7px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		border-top: 1px solid #bdbec1;
+
+		&:first-child {
+			margin-bottom: 34px;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&__number {
+			position: absolute;
+			top: 8px;
+			left: 0;
+
+			font-family: "Montserrat";
+			font-weight: 700;
+			font-size: 8px;
+			line-height: 110%;
+			/* identical to box height, or 9px */
+
+			text-transform: uppercase;
+		}
+		&__title {
+		}
+		&__btn {
+			padding: 8px 24px;
+
+			border-radius: 6px;
+			a {
+				font-weight: 500;
+				font-size: 15px;
+				line-height: 106%;
+				/* identical to box height, or 16px */
+
+				text-transform: lowercase;
+				font-variant: all-small-caps;
+
+				/* Gray-Scale / Sixtary */
+
+				color: #fff;
+			}
+		}
+
+		h3,
+		& > p,
+		& > a {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 110%;
+			text-transform: lowercase;
+			font-variant: all-small-caps;
+		}
+		h4 {
+			font-size: 15px;
+			line-height: 106%;
+			/* identical to box height, or 16px */
+
+			/* Gray-Scale / Secondary */
+			color: #6a6b74;
+			text-transform: lowercase;
+			font-variant: all-small-caps;
+		}
+	}
+}
+
+@media (max-width: 1199.98px) {
+	.dealers {
+		&__inner {
+			padding: 20px 20px 30px;
+			&::after {
+				transform: scale(93%);
+				bottom: calc(50% - 744px);
+				left: calc(50% - 455px);
+			}
+		}
+		&__title {
+			margin-bottom: 70px;
+			font-size: 32px;
+			line-height: 90%;
+			/* or 29px */
+			letter-spacing: -0.01em;
+		}
+		&__list li {
+			width: 225px;
+		}
+		&__contacts {
+			margin-top: 910px;
+		}
+		.contacts-item {
+			max-width: none;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.dealers {
+		&__inner {
+			padding: 14px 10px 25px;
+			border-radius: 8px;
+			&::after {
+				display: none;
+			}
+		}
+		&__title {
+			margin-bottom: 43px;
+			font-size: 23px;
+		}
+		&__contacts {
+			margin-top: 130px;
+		}
+
+		&__list {
+			height: 185px;
+			gap: 0;
+			li {
+				margin-bottom: 10px;
+				width: 50%;
+				font-size: 14px;
+				line-height: 100%;
+			}
+		}
+
+		.contacts-item {
+			&:first-child {
+				display: block;
+			}
+			&__btn {
+				margin-top: 11px;
+			}
+		}
+	}
+}
+
+@media (max-width: 374.98px) {
+	.dealers {
+		&__list {
+			height: 200px;
+		}
+	}
+}

@@ -8,9 +8,15 @@
 			border-radius: 20px;
 		}
 		&_bottom-block {
-			display: flex;
-			gap: 17px;
 			overflow: hidden;
+			.slide-block {
+				display: flex;
+				gap: 17px;
+				transition: transform 0.5s ease-in-out;
+			}
+			.slide-active {
+				transform: translateX(-11%);
+			}
 		}
 	}
 
@@ -102,7 +108,7 @@
 				line-height: 92%;
 				/* identical to box height, or 15px */
 
-				font-variant: small-caps;
+				font-variant: all-small-caps;
 
 				/* Brand/Blue-Primary-Light */
 
@@ -132,7 +138,7 @@
 			line-height: 100%;
 			/* identical to box height, or 16px */
 
-			font-variant: small-caps;
+			font-variant: all-small-caps;
 			text-transform: uppercase;
 
 			/* Gray-Scale / Tetriary */
@@ -180,7 +186,7 @@
 			/* identical to box height, or 20px */
 
 			text-transform: lowercase;
-			font-variant: small-caps;
+			font-variant: all-small-caps;
 			cursor: pointer;
 			span {
 				position: absolute;
@@ -311,7 +317,7 @@
 			}
 
 			& ~ .advantages {
-				flex: 0 1 82.5%;
+				// flex: 0 1 82.5%;
 				[class*="__title"] {
 					h3 {
 						font-size: 20px;
@@ -364,6 +370,8 @@
 
 			display: flex;
 			align-items: center;
+
+			cursor: pointer;
 
 			.arrow-circle {
 				flex: 0 0 auto;
@@ -519,6 +527,13 @@
 
 @media (max-width: 1439.98px) {
 	.hero-page {
+		&__inner {
+			&_bottom-block {
+				.slide-active {
+					transform: translateX(-11.5%);
+				}
+			}
+		}
 		&__product-link {
 			flex: 0 0 auto;
 			width: calc(50% - 7.5px);
@@ -603,8 +618,13 @@
 				padding: 20px 17px 18px;
 			}
 			&_bottom-block {
-				flex-wrap: wrap;
-				gap: 10px;
+				.slide-block {
+					flex-wrap: wrap;
+					gap: 10px;
+				}
+				.slide-active {
+					transform: none;
+				}
 			}
 		}
 		&__title-block {

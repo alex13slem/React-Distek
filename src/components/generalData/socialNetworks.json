@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"name": "Facebook",
+		"link": "",
+		"icon": "/svg/icons/social/FB.svg"
+	},
+	{
+		"id": 2,
+		"name": "VK",
+		"link": "",
+		"icon": "/svg/icons/social/VK.svg"
+	},
+	{
+		"id": 3,
+		"name": "YouTube",
+		"link": "",
+		"icon": "/svg/icons/social/YouTube.svg"
+	},
+	{
+		"id": 4,
+		"name": "Instagram",
+		"link": "",
+		"icon": "/svg/icons/social/Insta.svg"
+	}
+]

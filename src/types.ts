@@ -16,9 +16,18 @@ export type Companys = {
 
 export type SoftwareCardData = {
 	id: number,
-	title: string,
+	title: ReactNode | string,
 	number: string,
 	image: string,
 	links: any,
 	list: string[]
+}
+
+export type NewsArticleData = {
+	id: number,
+	data: string,
+	title: string,
+	imgJPG: string,
+	imgWebP: string,
+	link: string
 }
