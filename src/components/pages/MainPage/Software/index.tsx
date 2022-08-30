@@ -1,5 +1,5 @@
-import { SoftwareCard } from "../localComponents/SoftwareCard"
-import { softwareCardsData } from "../localData/softwareCardsData"
+import { SoftwareCard } from "../localComponents/softwareCard"
+import { softwareCardsData } from "../../../../data/mainPage/softwareCardsData"
 import { useRef, useState } from "react"
 
 
@@ -18,18 +18,12 @@ export const Software = () => {
 					className="software__inner software__inner_bottom-block"
 					ref={softwareCardsBlock}
 				>
-					{
-
-
-						softwareCardsData.map((item) => (
-
-							<SoftwareCard
-								data={item}
-								key={item.id}
-							/>
-
-						)
-						)}
+					{softwareCardsData.map((item) => (
+						<SoftwareCard
+							data={item}
+							key={item.id}
+						/>
+					))}
 				</div>
 			</div>
 		</section>

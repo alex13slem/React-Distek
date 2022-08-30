@@ -1,9 +1,7 @@
 import { NewsArticleData } from "../../../../../types"
 import Image from 'react-image-webp';
 
-export const NewsArticle = (
-	{ data }: { data: NewsArticleData }
-) => {
+export const NewsArticle = ({ data }: { data: NewsArticleData }) => {
 	return (
 
 		<article className="news-article">

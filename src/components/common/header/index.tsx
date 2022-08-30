@@ -1,5 +1,5 @@
-import contacts from "../../generalData/contacts.json"
-import mainMenu from "../../generalData/mainMenu.json"
+import contacts from "../../../data/contacts.json"
+import mainMenu from "../../../data/mainMenu.json"
 import { Link, animateScroll as scroll } from "react-scroll";
 import React, { useState, useEffect, useRef } from "react";
 
@@ -26,40 +26,29 @@ export const Header = () => {
 		setPrevScrollPosition(currentScrollPosition);
 
 		let scrollStep = prevScrollPosition - currentScrollPosition
-		let scrollValue = headerTop - + scrollStep
+		let scrollValue = headerTop + scrollStep
 
-		if (
-			scrollValue > -headerHeight
-			&&
-			scrollValue < 0
-		) {
+		if (scrollValue > -headerHeight && scrollValue < 0) {
 			setHeaderTop(scrollValue)
+		} else if (scrollValue <= -headerHeight) {
+			setHeaderTop(-headerHeight)
+		} else if (scrollValue >= 0) {
+			setHeaderTop(0)
 		}
 
-		console.log(scrollValue, -headerHeight)
 	};
 
 	useEffect(() => {
 
 		window.addEventListener('scroll', handleScroll);
 
-		// console.log(currentScrollPosition, prevScrollPosition)
-
-		// if (currentScrollPosition > prevScrollPosition) {
-		// 	setHeaderTop(scrollDown)
-
-		// } else {
-		// 	setHeaderTop(scrollUp)
-		// }
-
-		// if (currentScrollPosition > prevScrollPosition) {
-		// 	setHeaderTop(-headerHeight)
-
-		// } else {
-		// 	setHeaderTop(0)
-		// }
+		return () => {
+			window.removeEventListener('scroll', handleScroll)
+		}
 
 	});
+
+
 	return (
 		<header className="header"
 			ref={headerRef}
@@ -85,8 +74,8 @@ export const Header = () => {
 											activeClass="active"
 											to={`${item.link}`}
 											spy={true}
-											smooth={true}
-											offset={-headerHeight}
+											smooth={true} // Плавность скролла
+											offset={-headerHeight} // Установка отступа при скролле
 											duration={100}
 
 										>{item.name}</Link>

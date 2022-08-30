@@ -1,15 +1,7 @@
-import { useEffect, useRef, useState } from "react"
 import { Companys, SoftwareCardData } from "../../../../../types"
 
-
-
-
 export const SoftwareCard = (
-	{
-		data
-	}: {
-		data: SoftwareCardData
-	}
+	{ data }: { data: SoftwareCardData }
 ) => {
 
 	return (
@@ -17,8 +9,6 @@ export const SoftwareCard = (
 		<div className="software-card">
 			<div className="sotware-card__number box-number"><img src={data.number} alt="" /></div>
 			<h3 className="software-card__title">{data.title}</h3>
-
-
 
 			<div className="software-card__image"><img src={data.image} alt='' /></div>
 			<div className="software-card__product-links">
@@ -40,7 +30,6 @@ export const SoftwareCard = (
 				}
 			</div>
 
-
 			<ul className="software-card__list">
 				{
 					data.list.map((el: string, idx) => (
@@ -52,8 +41,6 @@ export const SoftwareCard = (
 			</ul>
 
 		</div>
-
-
 
 	)
 

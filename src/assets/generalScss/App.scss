@@ -1,19 +1,39 @@
+// Шрифты
 @import "./font-face";
+// Бутстрап
 @import "./custom/bootstrap";
+// Сброс стилей
 @import "./normalize";
+// Стили общих компонентов сайта (Кнопки, ссылки, декор)
 @import "./site-style";
 
-@import "../../components/generalComponents/Accordion/accordion";
-@import "../../components/generalComponents/FormEmail/form-block";
+// ------------- Стили общих компонентов
+// Аккордеон
+@import "../../components/common/accordion/accordion";
+// Форма
+@import "../../components/common/formEmail/form-block";
 
-@import "../../components/generalComponents/Header/header";
-@import "../../components/generalComponents/Footer/footer";
+// Шапка
+@import "../../components/common/header/header";
+// Подвал
+@import "../../components/common/footer/footer";
 
-@import "../../components/pages/MainPage/mainPage";
-@import "../../components/pages/MainPage/localComponents/SoftwareCard/sofrware-card";
-@import "../../components/pages/MainPage/localComponents/NewsArticle/news-article";
+// ------------- Стили главной страницы
+// Общие
+@import "../../components/pages/mainPage/main-page";
 
-@import "../../components/pages/MainPage/HeroPage/hero-page";
-@import "../../components/pages/MainPage/Software/software";
-@import "../../components/pages/MainPage/Dealers/dealers";
-@import "../../components/pages/MainPage/News/news";
+// ----- Локальные компоненты
+// Карточка продукта
+@import "../../components/pages/mainPage/localComponents/softwareCard/sofrware-card";
+// Новостная карточка
+@import "../../components/pages/mainPage/localComponents/newsArticle/news-article";
+
+// ----- Стили секций
+// Первый экран
+@import "../../components/pages/mainPage/heroPage/hero-page";
+// Продукция
+@import "../../components/pages/mainPage/software/software";
+// Диллерская сеть
+@import "../../components/pages/mainPage/dealers/dealers";
+// Новости
+@import "../../components/pages/mainPage/news/news";

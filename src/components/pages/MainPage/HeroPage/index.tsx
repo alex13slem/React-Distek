@@ -1,12 +1,13 @@
-import { Accordion } from "../../../generalComponents/Accordion/Accordion"
-import { accordionData } from "../localData/accordionData"
-import companys from "../../../generalData/companys.json"
-import contacts from "../../../generalData/contacts.json"
+import { Accordion } from "../../../common/accordion"
+import { accordionData } from "../../../../data/mainPage/accordionData"
+import companys from "../../../../data/companys.json"
+import contacts from "../../../../data/contacts.json"
 import { useState } from "react"
 import { Link } from "react-scroll"
 
 export const HeroPage = () => {
 
+	// Установка активности для карточки справа 
 	const [slideActive, setSlideActive] = useState<string>('');
 
 	return (

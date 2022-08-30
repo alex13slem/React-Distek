@@ -1,5 +1,5 @@
-import dealersData from "../../../generalData/dealers.json"
-import contactsData from '../../../generalData/contacts.json'
+import dealersData from "../../../../data/dealers.json"
+import contactsData from '../../../../data/contacts.json'
 
 export const Dealers = () => {
 

@@ -1,6 +1,6 @@
-import { FormEmail } from "../../../generalComponents/FormEmail"
-import { NewsArticle } from "../localComponents/NewsArticle/NewsArticle"
-import newsData from "../localData/newsArticleData.json"
+import { FormEmail } from "../../../common/formEmail"
+import { NewsArticle } from "../localComponents/newsArticle"
+import newsData from "../../../../data/mainPage/newsArticleData.json"
 
 export const News = () => {
 

@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { AccordionData } from "../../../types"
 
 export const AccordionItem = ({
+
+	// Определение типов
 	classItem,
 	classTrigger,
 	classContent,
@@ -16,10 +18,12 @@ export const AccordionItem = ({
 	isOpen: boolean;
 	btnOnClick: () => void;
 }) => {
-	const contentRef = useRef<HTMLDivElement>(null);
-	const [height, setHeight] = useState(0);
+
+	const contentRef = useRef<HTMLDivElement>(null); // Образец блока
+	const [height, setHeight] = useState(0); // Установка высоты нижней части аккордеона
 
 	useEffect(() => {
+		// Присвоение высоты нижней части аккордеона в зависимости от условий
 		if (isOpen) {
 			const contentEl = contentRef.current as HTMLDivElement;
 

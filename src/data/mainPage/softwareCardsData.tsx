@@ -1,12 +1,12 @@
-import cardNum1 from "../../../../assets/svg/icons/block-number-1.svg"
-import cardNum2 from "../../../../assets/svg/icons/block-number-2.svg"
-import cardNum3 from "../../../../assets/svg/icons/block-number-3.svg"
+import cardNum1 from "../../assets/svg/icons/block-number-1.svg"
+import cardNum2 from "../../assets/svg/icons/block-number-2.svg"
+import cardNum3 from "../../assets/svg/icons/block-number-3.svg"
 
-import cardImg1 from "../../../../assets/images/software/card-1.gif"
-import cardImg2 from "../../../../assets/images/software/card-2.gif"
-import cardImg3 from "../../../../assets/images/software/card-3.gif"
+import cardImg1 from "../../assets/images/software/card-1.gif"
+import cardImg2 from "../../assets/images/software/card-2.gif"
+import cardImg3 from "../../assets/images/software/card-3.gif"
 
-import companyLinks from "../../../generalData/companys.json"
+import companyLinks from "../../data/companys.json"
 
 const sketchup = [companyLinks.find(el => el.id === 1)]
 const trimble = [companyLinks.find(el => el.id === 4)]

@@ -1,9 +1,10 @@
-import { AccordionItem } from "./AccordionItem"
+import { AccordionItem } from "./accordionItem"
 import { AccordionData } from "../../../types"
 import { useState } from "react"
 
 export const Accordion = (
 
+	// Определение типов
 	{
 		items,
 		classAccordion,
@@ -19,8 +20,10 @@ export const Accordion = (
 	}
 
 ) => {
-	// console.log(items)
+	// Установка значения для текущего элемента
 	const [currentIdx, setCurrentIdx] = useState(-1)
+
+	// Функция нажатия на триггерную кнопку
 	const btnOnClick = (idx: number) => {
 		setCurrentIdx((currentValue) => (currentValue !== idx ? idx : -1))
 	}
