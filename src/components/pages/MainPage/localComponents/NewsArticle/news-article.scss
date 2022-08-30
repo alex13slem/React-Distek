@@ -93,14 +93,15 @@
 		color: #fff;
 	}
 	&__btn {
-		position: relative;
+		// position: relative;
 		margin-top: 35px;
 		width: 100%;
 
 		display: flex;
 		align-items: center;
-		padding: 20px 17px;
-		padding-right: 50px;
+		justify-content: space-between;
+		padding: 10px;
+		padding-left: 20px;
 
 		font-size: 15px;
 		line-height: 106%;
@@ -114,14 +115,10 @@
 			color: rgba(25, 122, 207, 1);
 		}
 
-		&::after {
-			position: absolute;
-			content: "";
+		.arrow-circle {
+			fill: #6a6b74;
 			width: 30px;
 			height: 30px;
-			right: 10px;
-			top: calc(50% - 15px);
-			background: url("~/public/svg/icons/arrow-circle.svg") 0 0 / contain no-repeat;
 		}
 	}
 }
@@ -136,7 +133,7 @@
 			font-size: 16px;
 		}
 		&__btn {
-			padding: 17px 10px;
+			padding: 10px;
 			font-size: 13px;
 		}
 	}

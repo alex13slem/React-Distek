@@ -1,14 +1,14 @@
 .header {
 	z-index: 100;
-	position: fixed;
-	width: 100%;
+	position: sticky;
 	top: 0;
-	left: 0;
 
 	padding-top: 24px;
 	padding-bottom: 15px;
 
 	background: var(--bs-body-bg);
+
+	// transition: top 0.5s ease-in-out;
 
 	&__inner {
 		display: flex;

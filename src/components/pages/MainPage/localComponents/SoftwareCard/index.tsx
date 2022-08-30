@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react"
 import { Companys, SoftwareCardData } from "../../../../../types"
 
 
+
+
 export const SoftwareCard = (
 	{
 		data

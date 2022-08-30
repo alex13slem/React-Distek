@@ -38,10 +38,12 @@
 		gap: 30px;
 	}
 	&__nav-title {
-		position: relative;
-		max-width: max-content;
 		margin-bottom: 35px;
-		padding-right: 27px;
+		width: max-content;
+
+		display: flex;
+		align-items: center;
+		gap: 9.5px;
 
 		font-weight: 500;
 		font-size: 20px;
@@ -49,29 +51,25 @@
 		/* identical to box height, or 19px */
 		font-variant: all-small-caps;
 
+		.arrow-up {
+			width: 15px;
+			height: 14px;
+			fill: #393838;
+		}
 		a {
 			cursor: pointer;
 		}
-
-		&::after {
-			position: absolute;
-			width: 15px;
-			height: 14px;
-			content: "";
-			top: 3px;
-			right: 2.5px;
-
-			background: url("~/public/svg/icons/arrow-up.svg") 0 0 / contain no-repeat;
-		}
 	}
 	&__li {
-		max-width: fit-content;
-		position: relative;
 		margin-bottom: 8px;
 		&:last-child {
 			margin: 0;
 		}
-		padding-right: 27px;
+
+		display: flex;
+		align-items: center;
+		gap: 11px;
+
 		font-size: 18px;
 		line-height: 100%;
 		/* identical to box height, or 18px */
@@ -80,20 +78,23 @@
 		a {
 			cursor: pointer;
 		}
-
-		&::after {
-			position: absolute;
+		.arrow-up {
+			display: none;
 			width: 13px;
 			height: 12.13px;
-			content: "";
-			top: 4px;
-			right: 3px;
-
-			background: url("~/public/svg/icons/arrow-left.svg") 0 0 / contain no-repeat;
+			fill: #393838;
+		}
+		.arrow-right {
+			width: 13px;
+			height: 12.13px;
+			fill: #393838;
 		}
 		&_arrow-up {
-			&::after {
-				background: url("~/public/svg/icons/arrow-up.svg") 0 0 / contain no-repeat;
+			.arrow-up {
+				display: block;
+			}
+			.arrow-right {
+				display: none;
 			}
 		}
 	}
@@ -222,7 +223,7 @@
 				border-radius: 16px;
 			}
 			&_bottom {
-				flex-wrap: wrap;
+				flex-direction: column;
 			}
 		}
 		&__logo-block,
@@ -298,6 +299,7 @@
 			p {
 				flex: 0 0 50%;
 				margin: 0;
+				text-align: right;
 			}
 			img {
 				width: 123px;
