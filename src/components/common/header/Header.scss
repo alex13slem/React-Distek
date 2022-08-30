@@ -8,8 +8,6 @@
 
 	background: var(--bs-body-bg);
 
-	// transition: top 0.5s ease-in-out;
-
 	&__inner {
 		display: flex;
 		gap: 11px;
@@ -30,16 +28,15 @@
 		}
 		li {
 			position: relative;
-			padding-right: 27px;
 
-			&::after {
-				position: absolute;
-				content: "";
-				background: url("~/public/svg/icons/arrow-down.svg") 0 center / contain no-repeat;
-				top: 0;
-				right: 2.5px;
+			display: flex;
+			align-items: center;
+			gap: 9.5px;
+			.arrow-down {
 				width: 15px;
 				height: 19px;
+				fill: #393838;
+				transition: margin 0.5s ease-in-out;
 			}
 		}
 		a {
@@ -52,6 +49,17 @@
 			text-transform: lowercase;
 
 			cursor: pointer;
+
+			text-decoration-color: #b3b3b3;
+			transition: text-decoration 0.5s ease-in-out, color 0.5s ease-in-out;
+
+			&:hover {
+				text-decoration: underline #c7c7c7;
+				color: #444444;
+				& ~ .arrow-down {
+					margin-bottom: -10px;
+				}
+			}
 		}
 		a.active {
 			color: #000;

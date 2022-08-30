@@ -152,6 +152,9 @@
 					height: 14px;
 					background: url("~/public/svg/icons/mail.svg") 0 0 / contain no-repeat;
 				}
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 
@@ -242,6 +245,9 @@
 
 				transition: background 0.5s ease-in-out;
 			}
+			&:hover {
+				text-decoration: underline #6a6b74;
+			}
 		}
 		&__list-text {
 			overflow: hidden;
@@ -278,6 +284,7 @@
 			}
 		}
 	}
+
 	.clients {
 		position: relative;
 		order: 2;
@@ -420,6 +427,11 @@
 				text-transform: lowercase;
 				color: #6a6b74;
 				transition: color 0.5s ease-in-out;
+			}
+			&:hover {
+				p {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
@@ -579,14 +591,7 @@
 		}
 		&__product-links {
 			p {
-				padding-right: 21px;
 				font-size: 16px;
-				&::after {
-					width: 11px;
-					height: 10px;
-					right: 2.75px;
-					bottom: calc(50% - 5px);
-				}
 			}
 		}
 		.advantages {
@@ -841,6 +846,9 @@
 		&__product-links {
 			display: flex;
 			flex-direction: column;
+		}
+		&__product-link {
+			width: 100%;
 		}
 		.advantages,
 		.clients {

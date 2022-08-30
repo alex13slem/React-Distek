@@ -1,4 +1,5 @@
 import { ReactNode } from "react"
+import { JsxElement } from "typescript"
 
 export type AccordionData = {
 	id: number,
@@ -30,4 +31,11 @@ export type NewsArticleData = {
 	imgJPG: string,
 	imgWebP: string,
 	link: string
+}
+
+export type SocialNetworksData = {
+	id: string,
+	name: string,
+	link: string,
+	SVG: JsxElement
 }

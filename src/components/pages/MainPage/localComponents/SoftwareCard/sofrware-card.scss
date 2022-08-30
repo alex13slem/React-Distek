@@ -26,13 +26,6 @@
 		text-transform: lowercase;
 	}
 
-	// &__top-block {
-	// 	flex: 1 1 auto;
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	justify-content: space-between;
-	// }
-
 	&__image {
 		flex: 1 1 auto;
 		img {
@@ -46,16 +39,14 @@
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
-		// flex: 1;
-		// justify-content: flex-end;
 	}
 	&__product-link {
+		width: max-content;
 		gap: 15px;
 	}
 	&__product-link-logo {
 	}
 	&__list {
-		// flex: 4 1 auto;
 		min-height: 245px;
 		width: 100%;
 		margin-top: 30px;
@@ -91,9 +82,6 @@
 					height: 205px;
 				}
 			}
-			&__product-links {
-				// margin-top: 75px;
-			}
 		}
 	}
 	&:nth-child(2) {
@@ -104,9 +92,6 @@
 					height: 250px;
 				}
 			}
-			&__product-links {
-				// margin-top: 24px;
-			}
 		}
 	}
 	&:nth-child(3) {
@@ -116,9 +101,6 @@
 					margin-top: 99px;
 					height: 180px;
 				}
-			}
-			&__product-links {
-				// margin-top: 97px;
 			}
 		}
 	}
@@ -238,14 +220,7 @@
 					height: 24px;
 				}
 				p {
-					padding-right: 25px;
 					font-size: 16px;
-					&::after {
-						width: 11px;
-						height: 11px;
-						bottom: calc(50% - 5.5px);
-						right: 5px;
-					}
 				}
 			}
 		}
@@ -311,17 +286,9 @@
 					height: 28px;
 				}
 				p {
-					padding-right: 30px;
 					font-size: 20px;
 					overflow: hidden;
-					max-width: 86px;
-					&::after {
-						width: 22px;
-						height: 16px;
-						bottom: calc(50% - 8px);
-						right: 0px;
-						background: url("~/public/svg/icons/arrow-left.svg") right / contain no-repeat, #fff;
-					}
+					max-width: 63px;
 				}
 			}
 		}
@@ -367,14 +334,8 @@
 		&:nth-child(3) {
 			.product-link {
 				p {
-					padding-right: 30px;
 					overflow: hidden;
-					max-width: 108px;
-					&::after {
-						width: 22px;
-						right: 0px;
-						background: url("~/public/svg/icons/arrow-left.svg") right / contain no-repeat, #fff;
-					}
+					max-width: 84px;
 				}
 			}
 		}

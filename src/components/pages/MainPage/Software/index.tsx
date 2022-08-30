@@ -1,11 +1,7 @@
 import { SoftwareCard } from "../localComponents/softwareCard"
 import { softwareCardsData } from "../../../../data/mainPage/softwareCardsData"
-import { useRef, useState } from "react"
-
 
 export const Software = () => {
-
-	const softwareCardsBlock = useRef<HTMLDivElement>(null)
 
 	return (
 
@@ -16,7 +12,6 @@ export const Software = () => {
 				</div>
 				<div
 					className="software__inner software__inner_bottom-block"
-					ref={softwareCardsBlock}
 				>
 					{softwareCardsData.map((item) => (
 						<SoftwareCard

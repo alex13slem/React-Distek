@@ -4,6 +4,7 @@ import social from "../../../data/socialNetworks.json"
 
 import { FormEmail } from "../formEmail"
 import { Link } from "react-scroll"
+import { socialNetworksData } from "../../../data/socialNetworks"
 
 export const Footer = () => {
 	return (
@@ -105,16 +106,16 @@ export const Footer = () => {
 						<div className="footer__tel firm-btn"><a href={`tel:${contacts.tel}`}>{contacts.tel}</a></div>
 
 						<div className="footer__social-block">
-							{
-								social.map(nw => (
-									<a
-										href={nw.link}
-										className="footer__social-link"
-										key={nw.id}
-									>
-										<img src={nw.icon} alt={nw.name} />
-									</a>
-								))
+							{socialNetworksData.map(nW => (
+								<a
+									href={nW.link}
+									className="footer__social-link"
+									key={nW.id}
+								>
+									{nW.SVG}
+								</a>
+							)
+							)
 							}
 						</div>
 					</div>

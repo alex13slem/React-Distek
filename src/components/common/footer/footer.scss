@@ -55,9 +55,19 @@
 			width: 15px;
 			height: 14px;
 			fill: #393838;
+			transition: margin 0.5s ease-in-out;
 		}
 		a {
 			cursor: pointer;
+			transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
+			text-decoration-color: #b3b3b3;
+			&:hover {
+				text-decoration: underline #c7c7c7;
+				color: #444444;
+				& ~ .arrow-up {
+					margin-top: -10px;
+				}
+			}
 		}
 	}
 	&__li {
@@ -77,17 +87,33 @@
 
 		a {
 			cursor: pointer;
+
+			transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out;
+			text-decoration-color: #b3b3b3;
+			&:hover {
+				text-decoration: underline #c7c7c7;
+				color: #444444;
+				& ~ .arrow-up {
+					margin-top: -8px;
+				}
+				& ~ .arrow-right {
+					margin-top: -8px;
+					transform: rotate(-90deg) scaleY(-1);
+				}
+			}
 		}
 		.arrow-up {
 			display: none;
 			width: 13px;
 			height: 12.13px;
 			fill: #393838;
+			transition: margin 0.5s ease-in-out;
 		}
 		.arrow-right {
 			width: 13px;
 			height: 12.13px;
 			fill: #393838;
+			transition: margin 0.5s ease-in-out, transform 0.5s ease-in-out;
 		}
 		&_arrow-up {
 			.arrow-up {
@@ -150,6 +176,20 @@
 
 		background: #fff;
 		border-radius: 10px;
+
+		transition: background 0.5s ease-in-out;
+
+		svg {
+			fill: #197acf;
+			transition: fill 0.5s ease-in-out;
+		}
+		&:hover {
+			background: #197acf;
+
+			svg {
+				fill: #fff;
+			}
+		}
 	}
 	&__contacts {
 		display: flex;
@@ -184,6 +224,10 @@
 		}
 		& > a {
 			color: #197acf;
+			text-decoration-color: #197acf;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 	&__sagirov {
