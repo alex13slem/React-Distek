@@ -260,6 +260,11 @@
 		&__list-text {
 			overflow: hidden;
 			transition: height 0.5s ease-in-out;
+			p {
+				margin-top: 16px;
+				padding-right: 40px;
+				padding-left: 15px;
+			}
 		}
 
 		&__decor {
@@ -312,6 +317,8 @@
 		min-height: 100%;
 		width: 100%;
 		border-radius: 20px;
+
+		cursor: pointer;
 
 		&::after {
 			z-index: 1;
@@ -474,7 +481,7 @@
 		.advantages {
 			flex: 0 0 73%;
 			&__decor {
-				margin-top: 60px;
+				top: 0;
 				position: relative;
 				margin-top: 80px;
 				margin-right: 0;
@@ -828,6 +835,16 @@
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 374.98px) {
+	.hero-page {
+		.advantages {
+			&__decor {
+				height: 235px;
 			}
 		}
 	}

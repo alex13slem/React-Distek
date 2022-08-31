@@ -17,33 +17,49 @@ export const Header = () => {
 	const headerRef = useRef<HTMLDivElement>(null)
 	const headerHeight = headerRef.current?.scrollHeight as number
 
+	const [prevScrollPosition, setPrevScrollPosition] = useState(1)
 	const [currentScrollPosition, setCurrentScrollPosition] = useState(0);
-	const [prevScrollPosition, setPrevScrollPosition] = useState(0)
 	const [headerTopValue, setHeaderTopValue] = useState(0)
 
+	console.warn(`start code headerTopValue = ${headerTopValue}`)
+	console.log(`start code prevScrollPos = ${prevScrollPosition}`)
+	console.log(`start code currentScrollPos = ${currentScrollPosition}`)
+
 	const handleScroll = () => {
+		console.group()
+		console.warn(`start func headerTopValue = ${headerTopValue}`)
+		console.log(`start func prevScrollPos = ${prevScrollPosition}`)
+		console.log(`start func currentScrollPos = ${currentScrollPosition}`)
 
-		setCurrentScrollPosition(window.scrollY);
-		setPrevScrollPosition(currentScrollPosition);
+		console.log(`currentScrollPosition = ${currentScrollPosition},`)
+		console.log(`prevScrollPosition = ${prevScrollPosition},`)
 
-		let scrollDown = headerTopValue - (currentScrollPosition - prevScrollPosition)
-		let scrollUp = headerTopValue + (prevScrollPosition - currentScrollPosition)
+		setCurrentScrollPosition(window.scrollY)
 
-		if (currentScrollPosition > prevScrollPosition && scrollDown >= -headerHeight) {
-			setHeaderTopValue(scrollDown)
-		} else if (scrollDown < -headerHeight) {
+		let scrollStep = headerTopValue - (currentScrollPosition - prevScrollPosition)
+		console.log(`scrollStep = ${scrollStep},`)
+
+		if (scrollStep >= -headerHeight && scrollStep <= 0) {
+			setHeaderTopValue(scrollStep)
+			console.warn(`if scrollStep == valid, headerTopValue = ${headerTopValue}`)
+		}
+
+		if (scrollStep < -headerHeight) {
 			setHeaderTopValue(-headerHeight)
-		} else if (currentScrollPosition < prevScrollPosition && scrollUp <= 0) {
-			setHeaderTopValue(scrollUp)
-		} else if (scrollUp >= 0) {
+		}
+
+		if (scrollStep > 0) {
 			setHeaderTopValue(0)
 		}
+
+		setPrevScrollPosition(currentScrollPosition)
+
+		console.groupEnd()
 	};
 
 	useEffect(() => {
 
 		window.addEventListener('scroll', handleScroll);
-
 		return () => {
 			window.removeEventListener('scroll', handleScroll)
 		}
@@ -59,7 +75,7 @@ export const Header = () => {
 			<div className="header__wrap">
 				<div className="header__inner">
 					<nav className="header__navbar">
-						<a
+						<button
 							className="header__site-logo"
 							onClick={scrollToTop}
 						>
@@ -78,21 +94,21 @@ export const Header = () => {
 								<path d="M7.75781 4.55384L31.4112 18.2153V8.99856L23.6058 4.52512L15.7079 0L7.75781 4.55384Z" fill="url(#paint2_linear_1134_1074)" />
 								<defs>
 									<linearGradient id="paint0_linear_1134_1074" x1="16.2365" y1="28.7476" x2="36.454" y2="32.5875" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#00C8FF" />
-										<stop offset="1" stop-color="#055CFF" />
+										<stop stopColor="#00C8FF" />
+										<stop offset="1" stopColor="#055CFF" />
 									</linearGradient>
 									<linearGradient id="paint1_linear_1134_1074" x1="12.8574" y1="8.88369" x2="11.9227" y2="26.1063" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#00C8FF" />
-										<stop offset="1" stop-color="#197ACF" />
+										<stop stopColor="#00C8FF" />
+										<stop offset="1" stopColor="#197ACF" />
 									</linearGradient>
 									<linearGradient id="paint2_linear_1134_1074" x1="1759.53" y1="838.999" x2="1254.86" y2="431.41" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#00C8FF" />
-										<stop offset="1" stop-color="#197ACF" />
+										<stop stopColor="#00C8FF" />
+										<stop offset="1" stopColor="#197ACF" />
 									</linearGradient>
 								</defs>
 							</svg>
 
-						</a>
+						</button>
 						<ul>
 							{
 								mainMenu.map(item => (
