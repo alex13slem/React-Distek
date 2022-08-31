@@ -5,7 +5,7 @@
 	&__inner {
 		&_top-block {
 			margin-bottom: 15px;
-			padding: 25px 40px 93px;
+			padding: 25px 40px 117px;
 			background: #fff;
 			border-radius: 20px;
 		}
@@ -15,19 +15,19 @@
 		}
 	}
 	&__title {
-		max-width: 842px;
+		max-width: 825px;
 		font-family: "Montserrat";
 		font-weight: 600;
-		font-size: 45px;
-		line-height: 106%;
-		/* or 48px */
+		font-size: 40px;
+		line-height: 90%;
+		letter-spacing: -0.01em;
 	}
 }
 
 @media (max-width: 1439.98px) {
 	.software {
 		&__title {
-			max-width: 650px;
+			max-width: 665px;
 			font-size: 32px;
 		}
 
@@ -42,11 +42,17 @@
 @media (max-width: 1199.98px) {
 	.software {
 		margin-bottom: 70px;
+		&__title {
+			max-width: 600px;
+		}
 		&__inner {
 			&_top-block {
 				margin-bottom: 10px;
 				padding: 20px 20px 60px;
 				border-radius: 16px;
+			}
+			&_bottom-block {
+				gap: 10px;
 			}
 		}
 		&__title {
@@ -59,6 +65,9 @@
 
 @media (max-width: 767.98px) {
 	.software {
+		&__title {
+			max-width: 335px;
+		}
 		&__inner {
 			&_top-block {
 				padding: 10px 8px 50px;

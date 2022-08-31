@@ -24,7 +24,7 @@
 
 		ul {
 			display: flex;
-			gap: 80px;
+			gap: 82.5px;
 		}
 		li {
 			position: relative;
@@ -75,7 +75,7 @@
 		border-radius: 10px;
 
 		a {
-			padding: 20px 60px;
+			padding: 21px 59px;
 			font-weight: 500;
 			font-variant: all-small-caps;
 			font-size: 17px;
@@ -137,14 +137,16 @@
 		}
 		&__site-logo {
 			margin: 7px 0;
-			img {
+			img,
+			svg {
 				height: 26px;
+				width: 93px;
 			}
 		}
 		&__tel {
 			border-radius: 8px;
 			a {
-				padding: 10px 30px;
+				padding: 11px 30px 10px;
 			}
 		}
 	}

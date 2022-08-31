@@ -93,7 +93,6 @@
 		color: #fff;
 	}
 	&__btn {
-		// position: relative;
 		margin-top: 35px;
 		width: 100%;
 
@@ -111,6 +110,7 @@
 		background: #fff;
 		border-radius: 10px;
 
+		transition: color 0.5s ease-in-out;
 		span {
 			color: rgba(25, 122, 207, 1);
 		}
@@ -119,6 +119,14 @@
 			fill: #6a6b74;
 			width: 30px;
 			height: 30px;
+			transition: fill 0.5s ease-in-out;
+		}
+
+		&:hover {
+			color: #197acf;
+			.arrow-circle {
+				fill: #197acf;
+			}
 		}
 	}
 }

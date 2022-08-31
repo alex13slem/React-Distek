@@ -6,11 +6,11 @@ import cardImg1 from "../../assets/images/software/card-1.gif"
 import cardImg2 from "../../assets/images/software/card-2.gif"
 import cardImg3 from "../../assets/images/software/card-3.gif"
 
-import companyLinks from "../../data/companys.json"
+import { companysData } from "../companys"
 
-const sketchup = [companyLinks.find(el => el.id === 1)]
-const trimble = [companyLinks.find(el => el.id === 4)]
-const tekla = [companyLinks.find(el => el.id === 2), companyLinks.find(el => el.id === 3)]
+const sketchup = [companysData.find(el => el.id === 1)]
+const trimble = [companysData.find(el => el.id === 4)]
+const tekla = [companysData.find(el => el.id === 2), companysData.find(el => el.id === 3)]
 // console.log(tekla)
 
 export const softwareCardsData = [

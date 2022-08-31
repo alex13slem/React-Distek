@@ -10,9 +10,9 @@ export type AccordionData = {
 export type Companys = {
 	id: number,
 	name: string,
-	shortname: string | undefined,
+	shortname: string,
 	link: string,
-	srcImage: string
+	SVG: ReactNode
 }
 
 export type SoftwareCardData = {

@@ -2,28 +2,28 @@
 	{
 		"id": 1,
 		"name": "Sketchup",
-		"shortname": "Sketchup",
+		"shortname": "sketchup",
 		"link": "",
 		"srcImage": "/svg/icons/product-link-logo1.svg"
 	},
 	{
 		"id": 2,
 		"name": "Tekla structures",
-		"shortname": "Tekla",
+		"shortname": "tekla",
 		"link": "",
 		"srcImage": "/svg/icons/product-link-logo2.svg"
 	},
 	{
 		"id": 3,
 		"name": "Tekla model sharing",
-		"shortname": "Tekla",
+		"shortname": "tekla",
 		"link": "",
 		"srcImage": "/svg/icons/product-link-logo2.svg"
 	},
 	{
 		"id": 4,
 		"name": "Trimble connect",
-		"shortname": "Trimble",
+		"shortname": "trimble",
 		"link": "",
 		"srcImage": "/svg/icons/product-link-logo3.svg"
 	}

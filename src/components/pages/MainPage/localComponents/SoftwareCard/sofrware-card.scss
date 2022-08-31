@@ -14,8 +14,7 @@
 	}
 	&__title {
 		max-width: 560px;
-		min-height: 60px;
-		padding-left: 130px;
+		padding-left: 96px;
 		font-family: "Montserrat";
 		font-style: normal;
 		font-weight: 600;
@@ -40,10 +39,6 @@
 		flex-direction: column;
 		gap: 10px;
 	}
-	&__product-link {
-		width: max-content;
-		gap: 15px;
-	}
 	&__product-link-logo {
 	}
 	&__list {
@@ -59,8 +54,7 @@
 				margin-bottom: 0;
 			}
 			font-size: 18px;
-			line-height: 100%;
-			/* or 18px */
+			line-height: 120%;
 
 			&::before {
 				position: absolute;
@@ -131,7 +125,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: column;
-			max-height: 150px;
+			max-height: 170px;
 			min-height: auto;
 			li {
 				flex: 0 0 auto;
@@ -195,11 +189,12 @@
 		border-radius: 16px;
 
 		&__title {
+			max-width: 370px;
 			font-size: 25px;
-			padding-left: 100px;
+			padding-left: 80px;
 		}
 		&__list {
-			max-height: 185px;
+			max-height: 240px;
 		}
 
 		&:nth-child(1),
@@ -208,19 +203,6 @@
 			.software-card {
 				&__product-links {
 					margin-top: 6px;
-				}
-			}
-		}
-
-		&:nth-child(2) {
-			.product-link {
-				gap: 8px;
-				&__logo {
-					width: 42px;
-					height: 24px;
-				}
-				p {
-					font-size: 16px;
 				}
 			}
 		}
@@ -259,15 +241,26 @@
 	.software-card {
 		padding: 10px 10px 30px;
 		border-radius: 8px;
+		flex-direction: column;
 
 		&__title {
 			margin-bottom: 20px;
 			font-size: 20px;
-			padding-left: 62px;
+			padding-left: 52px;
 			width: 100%;
+			max-width: 300px;
 		}
 		&__product-links {
-			padding-left: 62px;
+			padding-left: 52px;
+		}
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3) {
+			.software-card {
+				&__product-links {
+					margin-top: 0;
+				}
+			}
 		}
 		&__list {
 			max-height: none;
@@ -275,21 +268,7 @@
 			li {
 				margin-bottom: 15px;
 				width: 100%;
-			}
-		}
-
-		&:nth-child(2) {
-			.product-link {
-				gap: 15px;
-				&__logo {
-					width: 49px;
-					height: 28px;
-				}
-				p {
-					font-size: 20px;
-					overflow: hidden;
-					max-width: 63px;
-				}
+				line-height: 106%;
 			}
 		}
 
@@ -310,11 +289,6 @@
 						margin-top: 40px;
 					}
 				}
-				&__product-link {
-					&:not(:first-child) {
-						display: none;
-					}
-				}
 			}
 		}
 		&:nth-child(3) {
@@ -323,19 +297,6 @@
 					img {
 						margin-top: 55px;
 					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width: 374.98px) {
-	.software-card {
-		&:nth-child(3) {
-			.product-link {
-				p {
-					overflow: hidden;
-					max-width: 84px;
 				}
 			}
 		}

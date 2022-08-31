@@ -20,9 +20,7 @@ export const SoftwareCard = (
 							key={links.id}
 						>
 							<div className="product-link__logo">
-								<img src={links.srcImage}
-									alt={links.shortname}
-								/>
+								{links.SVG}
 							</div>
 							<p>{links.name}</p>
 							<svg className="arrow-right" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">

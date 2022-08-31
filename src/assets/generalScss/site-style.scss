@@ -12,7 +12,7 @@
 		line-height: 95%;
 		/* identical to box height, or 19px */
 
-		text-transform: uppercase;
+		font-variant: all-small-caps;
 		white-space: nowrap;
 
 		/* Brand/Blue-Primary-Light */
@@ -29,6 +29,21 @@
 		background: #f1f1f1;
 		align-items: center;
 		justify-content: center;
+		svg {
+			fill: #005f9e;
+		}
+		.sketchup {
+			width: 20px;
+			height: 20px;
+		}
+		.tekla {
+			width: 18px;
+			height: 14px;
+		}
+		.trimble {
+			width: 18px;
+			height: 20px;
+		}
 	}
 	.arrow-right {
 		width: 14px;
@@ -142,6 +157,26 @@
 			width: 32px;
 			height: 32px;
 			box-shadow: -16px -16px #f1f1f1;
+		}
+	}
+
+	.product-link {
+		gap: 8px;
+		&__logo {
+			width: 42px;
+			height: 24px;
+			svg {
+				transform: scale(85%);
+			}
+		}
+		p {
+			margin-right: 3px;
+			font-size: 16px;
+			line-height: 92%;
+		}
+		.arrow-right {
+			width: 11px;
+			height: 10px;
 		}
 	}
 }

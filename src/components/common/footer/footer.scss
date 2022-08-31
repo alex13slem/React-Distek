@@ -31,6 +31,11 @@
 			color: #8a8b94;
 		}
 	}
+	&__logo {
+		svg {
+			height: 36px;
+		}
+	}
 	&__nav {
 		flex: 1 1 auto;
 		display: flex;
@@ -246,6 +251,19 @@
 		color: #8a8b94;
 		background: #fff;
 		border-radius: 0 10px 10px 0;
+
+		svg {
+			height: 16px;
+			flex: 0 0 auto;
+			fill: #6a6b74;
+
+			transition: fill 0.5s ease-in-out;
+		}
+		&:hover {
+			svg {
+				fill: #197acf;
+			}
+		}
 	}
 }
 
@@ -273,6 +291,13 @@
 		&__logo-block,
 		&__nav {
 			flex: 0 0 50%;
+		}
+		&__logo-block {
+			p {
+				span {
+					display: block;
+				}
+			}
 		}
 		&__nav {
 			gap: 87px;
@@ -326,6 +351,7 @@
 				margin-bottom: 10px;
 				padding: 15px 10px 30px;
 				border-radius: 8px;
+				flex-direction: column;
 			}
 			&_bottom {
 				gap: 10px;
@@ -336,21 +362,15 @@
 			flex: 0 0 100%;
 		}
 		&__logo-block {
-			margin-bottom: 80px;
+			margin-bottom: 78px;
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
 
 			p {
-				flex: 0 0 50%;
 				margin: 0;
-				text-align: right;
 			}
-			img {
-				width: 123px;
-			}
-		}
-		&__logo {
-			flex: 0 0 50%;
 		}
 		&__nav {
 			gap: 42px;
@@ -406,7 +426,7 @@
 		}
 	}
 }
-@media (max-width: 374.98px) {
+@media (max-width: 400px) {
 	.footer {
 		&__bottom {
 			&_first {
