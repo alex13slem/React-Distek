@@ -1,5 +1,6 @@
-import { SoftwareCard } from "../localComponents/softwareCard"
+
 import { softwareCardsData } from "../../../../data/mainPage/softwareCardsData"
+import { SoftwareCard } from "../localComponents/SoftwareCard"
 
 export const Software = () => {
 

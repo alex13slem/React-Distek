@@ -1,8 +1,7 @@
-import './assets/generalScss/app.scss';
-import { Footer } from './components/common/footer';
-
+import './assets/generalScss/App.scss';
 import { Header } from './components/common/header';
-import { MainPage } from './components/pages/mainPage';
+import { Footer } from './components/common/footer';
+import { MainPage } from './components/pages/MainPage';
 
 function App() {
   return (

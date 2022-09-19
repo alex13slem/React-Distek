@@ -1,7 +1,8 @@
-import { Dealers } from "./dealers"
-import { HeroPage } from "./heroPage"
-import { News } from "./news"
-import { Software } from "./software"
+import { Dealers } from "./Dealers"
+import { HeroPage } from "./HeroPage"
+import { News } from "./News"
+import { Software } from "./Software"
+
 
 
 
